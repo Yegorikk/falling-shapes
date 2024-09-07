@@ -1,0 +1,24 @@
+{
+  "name": "shapes",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "Yegor Popov",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^3.0.1",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "pixi.js": "^7.0.5",
+    "sass": "^1.78.0",
+    "typescript": "^5.5.4"
+  },
+  "description": ""
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Shapes Simulation</title>
+    <link rel="stylesheet" href="assets/style.scss" />
+  </head>
+  <body>
+    <div>
+        <h1 id="author">Popov Yegor</h1>
+    </div>
+    <div class="container">
+      <div class="controls">
+        <div>
+          <label>Shapes Count</label>
+          <input id="shapeCount" type="text" readonly />
+        </div>
+        <div>
+          <label>Surface Area (px²)</label>
+          <input id="surfaceArea" type="text" readonly />
+        </div>
+      </div>
+      <div id="canvas-container"></div>
+      <div class="controls">
+        <div class="gravity-control">
+          <label>Gravity</label>
+          <div>
+            <button id="decreaseGravity">-</button>
+            <input id="gravityValue" type="text" value="1" readonly />
+            <button id="increaseGravity">+</button>
+          </div>
+        </div>
+        <div class="shape-rate-control">
+          <label>Shapes per Second</label>
+          <div>
+            <button id="decreaseRate">-</button>
+            <input id="rateValue" type="text" value="0" readonly />
+            <button id="increaseRate">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.ts" type="module"></script>
+  </body>
+</html>

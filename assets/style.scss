@@ -1,0 +1,98 @@
+$background-color: #f0f0f0;
+$canvas-background: #fff;
+$border-color: #000;
+$container-gap: 20px;
+$control-gap: 50px;
+$control-inner-gap: 10px;
+$font-family: 'Roboto', sans-serif;
+$button-bg: #007bff;
+$button-bg-hover: #0056b3;
+$button-text-color: #fff;
+$input-bg: #fff;
+$input-border: #ccc;
+$input-border-focus: #007bff;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a2c2e1, #f6f9fc);
+}
+
+// Container styles
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Canvas container styles
+#canvas-container {
+  width: 800px;
+  height: 600px;
+  background-color: $canvas-background;
+  border: 1px solid $border-color;
+  margin: $container-gap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+// Controls styles
+.controls {
+  display: flex;
+  gap: $control-gap;
+  margin: 0 20px 0 20px;
+
+}
+
+// Control elements styles
+.controls > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $control-inner-gap;
+}
+
+button {
+  background-color: $button-bg;
+  color: $button-text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: $button-bg-hover;
+  }
+}
+
+input {
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#author {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  opacity: 0.3;
+  font-size: 32px;
+  color: #333;
+  rotate: 330deg;
+  z-index: 999;
+}
